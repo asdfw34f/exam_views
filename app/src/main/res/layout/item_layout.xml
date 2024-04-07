@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/tvStart_EndCityCode1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStart_EndCityName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvStart_EndCityCode1"
+        app:layout_constraintTop_toTopOf="@id/tvStart_EndCityCode1" />
+
+    <TextView
+        android:id="@+id/tvStartDate1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvStart_EndCityName"
+        app:layout_constraintTop_toBottomOf="@+id/tvStart_EndCityName" />
+
+    <TextView
+        android:id="@+id/tvEndDate1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvStartDate" />
+    <TextView
+        android:id="@+id/tvPrice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvEndDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvEndDate" />
+
+    <Button
+        android:id="@+id/btFav11"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/tvPrice1"
+        app:layout_constraintStart_toStartOf="@id/tvPrice1"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrice"
+        android:layout_marginLeft="220dp"/>
+</LinearLayout>
